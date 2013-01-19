@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Image Dump! With thumbnails!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <script type='text/javascript' src='../../lib/jquery-1.5.1.min.js'></script>
+    <script type='text/javascript' src='../../lib/webtoolkit.base64.js'></script>
+    <script type='text/javascript' src='../../lib/sha1.js'></script>
+    <script type='text/javascript' src='../../lib/jquery.md5.js'></script>
+    <script type='text/javascript' src='../../shov3.js'></script>
+
+    <script type='text/javascript' src='bootstrap-imagedump-thumbs.js'></script>
+
+    <style>
+    
+    body {
+      font-family: sans-serif;
+    }
+    
+    input {
+      font-size: 1.25em;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+
+<h1>IMAGE DUMP! WITH THUMBNAILS!</h1>
+<p>dump images in using field below. we make thumbnails and both go to s3. nuff said</p>
+
+<div class="uploader-stuff">
+  <input type="file" id="filez" onchange="runUpload();" multiple />
+  
+  <span class="progress-container"></span>
+</div>
+  
+<div id="crap"></div>
+<div id="debug"></div>
+  
+</body>
+
+</html>

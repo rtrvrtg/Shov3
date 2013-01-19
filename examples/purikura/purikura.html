@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>PURIKURA!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <script type='text/javascript' src='../../lib/jquery-1.5.1.min.js'></script>
+    <script type='text/javascript' src='../../lib/webtoolkit.base64.js'></script>
+    <script type='text/javascript' src='../../lib/sha1.js'></script>
+    <script type='text/javascript' src='../../lib/jquery.md5.js'></script>
+    <script type='text/javascript' src='../../shov3.js'></script>
+    <script type='text/javascript' src='../../geosnappy.js'></script>
+
+    <script type='text/javascript' src='bootstrap-purikura.js'></script>
+    <style>
+    
+    body {
+      font-family: sans-serif;
+    }
+    
+    input {
+      font-size: 1.25em;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+
+<h1>PURIKURA!</h1>
+<p>take a bunch of pictures. get them all put together.</p>
+
+<div class="uploader-stuff">
+  <video id="video"></video>
+  <button id="startbutton">Take photo</button>
+  <canvas id="canvasa" style="display: none;"></canvas>
+  <canvas id="canvas1" style="display: none;"></canvas>
+  <canvas id="canvas2" style="display: none;"></canvas>
+  <canvas id="canvas3" style="display: none;"></canvas>
+  <input id="coords" size="80" style="width: 400px;" />
+  
+  <span class="message"></span>
+  
+  <span class="progress-container"></span>
+</div>
+  
+<div id="crap"></div>
+<div id="debug"></div>
+  
+</body>
+
+</html>

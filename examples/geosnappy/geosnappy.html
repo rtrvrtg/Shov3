@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>GEOSNAPPY!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <script type='text/javascript' src='../../lib/jquery-1.5.1.min.js'></script>
+    <script type='text/javascript' src='../../lib/webtoolkit.base64.js'></script>
+    <script type='text/javascript' src='../../lib/sha1.js'></script>
+    <script type='text/javascript' src='../../lib/jquery.md5.js'></script>
+    <script type='text/javascript' src='../../shov3.js'></script>
+    <script type='text/javascript' src='../../geosnappy.js'></script>
+
+    <script type='text/javascript' src='bootstrap-geosnappy.js'></script>
+
+    <style>
+    
+    body {
+      font-family: sans-serif;
+    }
+    
+    input {
+      font-size: 1.25em;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+
+<h1>GEOSNAPPY!</h1>
+<p>take a picture. find out who else is near you.</p>
+
+<div class="uploader-stuff">
+  <video id="video"></video>
+  <button id="startbutton">Take photo</button>
+  <canvas id="canvas" style="display: none;"></canvas>
+  <input id="coords" size="80" style="width: 400px;" />
+  
+  <span class="progress-container"></span>
+</div>
+  
+<div id="crap"></div>
+<div id="debug"></div>
+  
+</body>
+
+</html>
